@@ -1,4 +1,4 @@
-package Show;
+package show;
 
 public class Vip extends Ingresso{
     private float valorAdicional;

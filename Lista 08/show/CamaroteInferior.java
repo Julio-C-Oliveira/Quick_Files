@@ -1,4 +1,4 @@
-package Show;
+package show;
 
 public class CamaroteInferior extends Vip {
     private String localizacao;

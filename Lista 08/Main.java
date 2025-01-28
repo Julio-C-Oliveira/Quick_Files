@@ -1,8 +1,11 @@
-import Animais.Animal;
-import Animais.Mamifero;
-import Animais.Peixe;
-
+import animais.Animal;
+import animais.Mamifero;
+import animais.Peixe;
 import java.util.Scanner;
+import pokemon.Tipo;
+import pokemon.Status;
+import pokemon.Move;
+import pokemon.Especie;
 
 public class Main {
     public static void main(String[] args) {
@@ -20,5 +23,40 @@ public class Main {
 
         // Questão 04:
         Utilitarios.escolherIngresso(new Scanner(System.in), 15.0f, 10.0f, 10.0f, "Bloco 01", "Bloco 02");
+
+        Move move1 = new Move(
+            (short) 10,
+            "Choque do Trovão",
+            (byte) 5,
+            Tipo.ELETRICO
+        );
+        Move move2 = new Move(
+            (short) 5,
+            "Investida",
+            (byte) 15,
+            Tipo.NORMAL
+        );
+        Move move3 = new Move(
+            (short) 2,
+            "Cauda de Ferro",
+            (byte) 20,
+            Tipo.PEDRA
+        );
+        Move[] moveSet = {move1, move2, move3};
+        // Questão 05:
+        Especie pikachu = new Especie(
+            (short) 11,
+            (short) 8,
+            Status.NORMAL,
+            (short) 20,
+            moveSet,
+            "Pikachu",
+            (short) 25,
+            (short) 12,
+            (short) 17,
+            Tipo.ELETRICO,
+            Tipo.NORMAL
+        );
+        System.out.println(pikachu);
     }
 }

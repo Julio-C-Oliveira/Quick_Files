@@ -1,6 +1,6 @@
-import Show.CamaroteInferior;
-import Show.CamaroteSuperior;
-import Show.Ingresso;
+import show.CamaroteInferior;
+import show.CamaroteSuperior;
+import show.Ingresso;
 
 import java.util.Scanner;
 

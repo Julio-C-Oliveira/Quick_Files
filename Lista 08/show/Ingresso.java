@@ -1,4 +1,4 @@
-package Show;
+package show;
 
 public class Ingresso {
     private float valor;
